@@ -94,6 +94,58 @@ The domain controller provides DHCP, DNS, authentication, and routing services t
 - Windows Event Viewer
 - VirtualBox
 
+## Lab Implementation and Evidence
+
+The following screenshots document the configuration and testing of the Active Directory home lab.
+
+### 1. Active Directory Structure
+
+The `mydomain.com` domain includes separate Organizational Units for administrative and standard user accounts.
+
+![Active Directory domain and organizational unit structure](screenshots/01-active-directory-structure.png)
+
+### 2. PowerShell Bulk User Provisioning
+
+Simulated user accounts were generated and provisioned into Active Directory using PowerShell.
+
+![Bulk-provisioned Active Directory users](screenshots/02-bulk-provisioned-users.png)
+
+### 3. DHCP Scope Configuration
+
+The DHCP scope provides client addresses from `172.16.0.100` through `172.16.0.200` on the `172.16.0.0/24` host-only network. Scope options provide the domain controller as the default gateway and DNS server.
+
+![DHCP scope and scope options](screenshots/03-dhcp-scope.png)
+
+### 4. Domain-Joined Windows Client
+
+The Windows 10 client was successfully joined to the `mydomain.com` Active Directory domain.
+
+![Windows 10 client joined to the domain](screenshots/04-domain-joined-client.png)
+
+### 5. Failed Logon Investigation
+
+Windows Security Event ID `4625` was reviewed to investigate a failed authentication attempt, including the attempted account, failure reason, logon type, workstation, and source address.
+
+![Failed logon event 4625](screenshots/05-failed-logon-event.png)
+
+### 6. User Account Creation Investigation
+
+Windows Security Event ID `4720` was analyzed to identify the administrator responsible for creating an account and review the attributes assigned to the new account.
+
+![User account creation event 4720](screenshots/06-account-created-event.png)
+
+### 7. DNS Configuration
+
+The Active Directory-integrated DNS zone contains the records required for domain-controller discovery, name resolution, and client communication.
+
+![Active Directory DNS configuration](screenshots/07-dns-configuration.png)
+
+### 8. Successful Logon Investigation
+
+Windows Security Event ID `4624` was reviewed to confirm successful authentication and examine the account, domain, logon type, and associated system information.
+
+![Successful logon event 4624](screenshots/08-successful-logon-event.png)
+
 ## Repository Structure
 
 ```text
