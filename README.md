@@ -79,9 +79,6 @@ The domain controller provides DHCP, DNS, authentication, and routing services t
 | 4624 | Successful logon | Identify successful authentication activity |
 | 4625 | Failed logon | Detect failed authentication attempts |
 | 4720 | User account created | Monitor new account creation |
-| 4722 | User account enabled | Detect account enablement |
-| 4726 | User account deleted | Monitor account deletion |
-| 4740 | User account locked out | Investigate repeated authentication failures |
 
 ## Technologies Used
 
