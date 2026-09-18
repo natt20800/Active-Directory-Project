@@ -151,9 +151,18 @@ Windows Security Event ID `4624` was reviewed to confirm successful authenticati
 ```text
 Active-Directory-Project/
 ├── README.md
-├── images/
-│   └── active-directory-architecture.png
+├── ARCHITECTURE.md
 ├── scripts/
-│   └── create-users.ps1
-└── sample-data/
-    └── sample-users.csv
+│   ├── create-active-directory-users.ps1
+│   ├── generate-simulated-names.ps1
+│   └── names.txt
+└── screenshots/
+    ├── 01-active-directory-structure.png
+    ├── 02-bulk-provisioned-users.png
+    ├── 03-dhcp-scope.png
+    ├── 04-domain-joined-client.png
+    ├── 05-failed-logon-event.png
+    ├── 06-account-created-event.png
+    ├── 07-dns-configuration.png
+    └── 08-successful-logon-event.png
+```
