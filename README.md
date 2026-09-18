@@ -1,4 +1,4 @@
-# Active-Directory-Project
+# Active-Directory-Security-Home-Lab 
 Virtualized Windows Server 2019 Active Directory security lab featuring PowerShell-based user provisioning, enterprise network services, and Windows Event Log analysis
 
 ## Lab Architecture
