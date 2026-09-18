@@ -145,24 +145,3 @@ The Active Directory-integrated DNS zone contains the records required for domai
 Windows Security Event ID `4624` was reviewed to confirm successful authentication and examine the account, domain, logon type, and associated system information.
 
 ![Successful logon event 4624](screenshots/08-successful-logon-event.png)
-
-## Repository Structure
-
-```text
-Active-Directory-Project/
-├── README.md
-├── ARCHITECTURE.md
-├── scripts/
-│   ├── new-ad-users-from-names.ps1
-│   ├── new-random-users.ps1
-│   └── names.txt
-└── screenshots/
-    ├── 01-active-directory-structure.png
-    ├── 02-bulk-provisioned-users.png
-    ├── 03-dhcp-scope.png
-    ├── 04-domain-joined-client.png
-    ├── 05-failed-logon-event.png
-    ├── 06-account-created-event.png
-    ├── 07-dns-configuration.png
-    └── 08-successful-logon-event.png
-```
