@@ -153,8 +153,8 @@ Active-Directory-Project/
 ├── README.md
 ├── ARCHITECTURE.md
 ├── scripts/
-│   ├── create-active-directory-users.ps1
-│   ├── generate-simulated-names.ps1
+│   ├── new-ad-users-from-names.ps1
+│   ├── new-random-users.ps1
 │   └── names.txt
 └── screenshots/
     ├── 01-active-directory-structure.png
